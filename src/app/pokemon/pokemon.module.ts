@@ -14,6 +14,8 @@ import { SearchPokemonComponent } from './search-pokemon/search-pokemon.componen
 import { LoaderComponent } from './loader/loader.component';
 import { AuthGuard } from "../auth.guard";
 import { BebouComponent } from './bebou/bebou.component';
+import { FightFormComponent } from './fight-form/fight-form.component';
+import { FightComponent } from './fight/fight.component';
 
 const pokemonRoutes: Routes = [
   { path: 'edit/pokemon/:id', component: EditPokemonComponent, canActivate: [AuthGuard] },
@@ -35,6 +37,8 @@ const pokemonRoutes: Routes = [
     SearchPokemonComponent,
     LoaderComponent,
     BebouComponent,
+    FightFormComponent,
+    FightComponent,
   ],
   imports: [
     CommonModule,
