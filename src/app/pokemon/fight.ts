@@ -1,10 +1,12 @@
 import {Pokemon} from "./pokemon";
 
 export class Fight {
-    id: number;
     pokemons: Pokemon[];
     commentaries: string[];
     winner: Pokemon;
+    constructor(pokemons: Pokemon[]) {
+        this.pokemons = pokemons;
+    }
 
     startFight(): Pokemon {
         this.commentaries.push("Le match entre " + this.pokemons[0].name + ' et ' + this.pokemons[1].name + ' va commencer');
